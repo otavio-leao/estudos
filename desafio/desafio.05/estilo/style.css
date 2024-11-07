@@ -1,5 +1,12 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+:root {
+    --fonte1: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte2: 'Sriracha', serif;
+}
+
 * {
     margin: 0px;
     padding: 0px;
@@ -7,6 +14,9 @@
 
 html, body {
     background-color: darkgray;
+    min-height: 100vh;
+    font-family: var(--fonte1)
+    
 }
 
 header {
@@ -17,19 +27,19 @@ header {
 
 
 header > h1 {
+    font-family: serif, Helvetica, sans-serif, Courier, monospace;
     padding-top: 50px;
-    font-size: 3em;
+    font-size: 8vw;
     font-weight: bolder;
     font-variant: small-caps;
 
 }
     
 header > p {
-    font-size: em;
-    padding: 15px 0px 50px 0px;
+    padding-bottom: 50px;
 }
 
-a {
+header a, footer a {
     font-weight: bolder;
     color: white;
     text-decoration: none;
@@ -40,9 +50,14 @@ header a:hover, footer a:hover {
 }
 
 section {
-    padding: 10vh 0px 10vh 15px;
+    font-size: 3.5vw;
+    padding: 10vh 0px 10vh 30px;
     line-height: 2em;
-    box-shadow: black 1px 1px ;
+    font-family:var(--fonte2)
+}
+
+section > p {
+    padding-bottom: 2em;
 }
 
 section.normal {
@@ -51,24 +66,29 @@ section.normal {
 
 section.imagem {
     color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.582);
+    background-size: cover;
+    background-attachment: fixed;
 }
 section.imagem > p {
-    background-color: rgba(0, 0, 0, 0.253);
-    width: 400px;
+    display: inline-block;
+    padding: 5px;
+    text-shadow: 1px 1px 0px black;
+    background-color: rgba(0, 0, 0, 0.514);
+    
 }
 
-section#q1 {
-    background: darkgray url(../imagens/background001.jpg) center no-repeat fixed;
-    background-size: 100% 100%;
+section#img1 {
+    background-image: url(../imagens/background001.jpg);
+    background-position: right center;
 }
 
-section#q2 {
-    background: darkgray url(../imagens/background002.jpg) center no-repeat fixed;
-    background-size: 100% 100%;
+section#img2 {
+    background-image: url(../imagens/background002.jpg);
 }
 
 footer {
-
+    font-family: var(--fonte1);
     color: white;
     background-color: black;
     padding: 10px;
