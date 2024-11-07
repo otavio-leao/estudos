@@ -42,6 +42,7 @@ header a:hover, footer a:hover {
 section {
     padding: 10vh 0px 10vh 15px;
     line-height: 2em;
+    box-shadow: black 1px 1px ;
 }
 
 section.normal {
@@ -54,6 +55,16 @@ section.imagem {
 section.imagem > p {
     background-color: rgba(0, 0, 0, 0.253);
     width: 400px;
+}
+
+section#q1 {
+    background: darkgray url(../imagens/background001.jpg) center no-repeat fixed;
+    background-size: 100% 100%;
+}
+
+section#q2 {
+    background: darkgray url(../imagens/background002.jpg) center no-repeat fixed;
+    background-size: 100% 100%;
 }
 
 footer {
