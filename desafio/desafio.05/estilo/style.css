@@ -26,13 +26,13 @@ header {
 }
 
 
+
 header > h1 {
     font-family: serif, Helvetica, sans-serif, Courier, monospace;
     padding-top: 50px;
     font-size: 8vw;
     font-weight: bolder;
     font-variant: small-caps;
-
 }
     
 header > p {
