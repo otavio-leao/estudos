@@ -32,9 +32,8 @@ body {
 }
 
 header { 
-    text-align: center;
     height: 13.5em;
-    background-color: var(--cor4);
+    text-align: center;
     background-image: linear-gradient(to bottom, var(--cor1), var(--cor4) );
     text-shadow: 2px 3px 4px rgba(0, 0, 0, 0.445);
 }
@@ -83,8 +82,10 @@ main {
     margin: auto;
     min-width: 230px;
     max-width: 1000px;
-    line-height: 2em;
     padding: 20px;
+    margin-bottom: 10px;
+    border-radius: 0px 0px 10px 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.534);
 }
 
 main h1 {
@@ -107,6 +108,7 @@ main  h2 {
     
 
 main p {
+    line-height: 2em;
     margin: 15px 0px;
     text-indent: 1.5em;
     text-align: justify;
@@ -146,11 +148,50 @@ img {
 div.video {
     background-color: var(--cor5);
     margin: 0px -20px 30px -20px;
-    
+    padding: 20px; 
+    padding-bottom: 59%;
     position: relative;
 }
 
 div.video > iframe {
-    position: absolute;
-   
+   position: absolute;
+   top: 5%;
+   left: 5%;
+   height: 90%;
+   width: 90%;
+}
+
+aside {
+    background-color: var(--cor0);
+    border-radius: 10px 10px 10px 10px ;
+    border: 1px solid rgba(0, 0, 0, 0.301);
+    box-shadow:  3px 3px 8px rgba(0, 0, 0, 0.418);
+    
+}
+
+aside > p {
+    padding: 10px;
+}
+
+aside h3 {
+    font-family: var(--fonte-padrao);
+    background-color: var(--cor3);
+    color: white;
+    border-radius: 10px 10px 0px 0px;
+    padding: 10px;
+} 
+
+aside > ul {
+    list-style-position: inside;
+    columns: 2;
+    list-style-type: '\2714\00A0\00A0'; 
+    padding: 10px;
+}
+
+footer {
+    background-color: var(--cor5);
+    padding: 5px;
+    text-align: center;
+    font-size: 14px;
+    color: white;
 }
