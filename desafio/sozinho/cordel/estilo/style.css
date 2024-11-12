@@ -1,0 +1,97 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+ :root {
+
+    --fonte1: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte2: 'Sriracha', serif;
+}
+    
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+html, body {
+    min-height: 100%vh;
+    background-color: darkgray;
+    font-family: var(--fonte1);
+}
+
+header {
+    background-color: black;
+    width: 100vw;    
+}
+
+header h1 {
+    font-family:  serif, Helvetica, sans-serif, Courier, monospace;
+    font-size: 8vw;
+    padding-top:  50px;
+    text-align: center;
+    color: white;
+    font-variant: small-caps;
+}
+
+header p {
+    padding-bottom: 50px;
+    text-align: center;
+    color: white;
+}
+
+header a, footer a {
+    text-decoration: none;
+    color: white;
+    font-weight: bolder;
+}
+
+
+article {
+    padding-left: 30px;
+    font-family: var(--fonte2);
+    font-size: 3.5vw;
+    line-height: 2em;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+}
+
+article > p {
+    padding-bottom: 50px;
+}
+
+article.texto {
+    background-color: white;
+}
+
+article.imagem {
+    background-image: url(/desafio/sozinho/cordel/imagem/background001.jpg);
+    padding-bottom: 10vh;
+    color: white;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+article.imagem > p {
+    padding: 10px;
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.479);
+}
+
+article#img1 {
+    background-image: url(../imagem/background001.jpg);
+    background-color: darkgray;
+    background-position: center right;
+}
+
+article#img2 {
+    background-image: url(../imagem/background002.jpg);
+    background-color: darkgray;
+}
+
+footer {
+    text-align: center;
+    padding: 5px;
+    color: white;
+    background-color: black;
+}
