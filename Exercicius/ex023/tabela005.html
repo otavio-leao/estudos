@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio de tabela</title>
+    <style>
+        table {
+            width: 400px;
+            height: 200px;
+            border-collapse: collapse;
+        }
+
+        td, th {
+            padding: 5px;
+            border: 1px solid black;
+        }
+
+        col.amarelo {
+            background-color: yellow;
+        }
+
+        col.vermelho {
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exercicio de Tabela</h1>
+
+    <table>
+
+        <colgroup>
+            <col class="amarelo">
+            <col class="vermelho" span="2">
+            <col class="amarelo">
+        </colgroup>
+
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Sexo</th>
+                <th>Idade</th>
+                <th>Profissão</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>Ana Maria</td>
+                <td>F</td>
+                <td>25</td>
+                <td>Jornalista</td>
+            </tr>
+
+            <tr>
+                <td>Rafa</td>
+                <td>M</td>
+                <td>27</td>
+                <td>Nutricionista</td>
+            </tr>
+
+            <tr>
+                <td>Marcia</td>
+                <td>F</td>
+                <td>28</td>
+                <td>Professora</td>
+            </tr>
+
+            <tr>
+                <td>Gabriel</td>
+                <td>M</td>
+                <td>35</td>
+                <td>Vendedor</td>
+            </tr>
+
+            <tr>
+                <td>Maria</td>
+                <td>F</td>
+                <td>36</td>
+                <td>medica</td>
+            </tr>
+
+            <tr>
+                <td>Otavio</td>
+                <td>M</td>
+                <td>19</td>
+                <td>Programador</td>
+            </tr>
+
+        </tbody>
+    </table>
+</body>
+</html> 
