@@ -4,8 +4,106 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>tabelas</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 400px;
+            height: 100px
+        }
+
+        thead {
+            color: white;
+            background-color: darkgray;
+        }
+
+        th.color {
+            text-align: left;
+            color: white;
+            background-color: darkgray;
+        }
+
+        td, th {
+            text-align: center;
+            padding: 5px;
+            border-collapse: collapse;
+            border: 1px solid black;
+        }
+
+    </style>
 </head>
 <body>
-    
+    <table>
+        <thead>
+            <tr>
+                <th rowspan="2" scope="row">Área</th>
+                <th rowspan="2" scope="row">Disciplinas</th>
+                <th colspan="2" scope="row">Notas</th>
+                <th rowspan="2" scope="row">Média</th>
+            </tr>
+
+            <tr>
+                <th scope="row">Nota1</th>
+                <th scope="row">Nota2</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <th rowspan="4" scope="colgroup">Exatas</th>
+                <td>Matematica</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+
+            <tr>
+                <td>Fisica</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+
+            <tr>
+                <td>Quimica</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+
+            <tr>
+                <td>Biologia</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+
+            <tr>
+                <th colspan="4" class="color" scope="col">Média de Exatas</th>
+                <td style="background-color: darkgray; color: white;">0.0</td>
+            </tr>
+
+            <tr>
+                <th
+                rowspan="2" scope="rowgroup">Humanas</th>               
+                <td>Historia</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+
+            <tr>
+                <td>Geografia</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+
+            <tr>
+                <th colspan="4" class="color" scope="col">Média de Humanas</th>
+                <td style="background-color: darkgray; color: white;">0.0</td>
+            </tr>
+        </tbody>
+
+    </table>
 </body>
 </html>
