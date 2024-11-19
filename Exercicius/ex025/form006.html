@@ -6,7 +6,29 @@
     <title>Document</title>
 </head>
 <body>
-    <h1></h1>
+    <h1>Exemplos de Formulario</h1>
+    <form action="cadastro.php" method="get">
+        <p>
+            <label for="icor"> Cor </label>
+            <input type="color" name="cor" id="icor" value="#00ff00">
+        </p>
+
+        <p>
+            <label for="inivel">Nivel</label>
+            <input type="range" name="nivel" id="inivel" value="5"
+            min="0" max="10">
+        </p>
+
+        <p>
+            <label for="ifoto">Foto de Perfil</label>
+            <input type="file" name="foto" id="ifoto">
+        </p>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
     
 </body>
 </html>
