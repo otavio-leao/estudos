@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexible Box</title>
+    <style>
+        div.conteiner {
+             background-color: bisque;
+             
+             display: flex;
+             flex-flow:row wrap;
+        }
+
+        div.item {
+            background-color: brown;
+            border: 1px solid black;
+            text-align: center;
+            flex-basis: 250px;
+            flex-grow: 1;
+            flex-shrink: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="conteiner">
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim dolorem, tempore itaque placeat fuga quidem inventore ab magni perferendis quod ut doloremque consequuntur ad similique alias commodi in atque excepturi.</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id atque, dicta accusamus doloribus vel dolor nisi nulla modi consectetur itaque culpa aut dolore natus mollitia, voluptatem placeat beatae blanditiis fugiat! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia mollitia iste, maiores praesentium asperiores accusamus. Sapiente, incidunt quisquam aut quas, totam est animi ducimus earum illum temporibus ab dicta unde. </div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt odit iste officia dolor pariatur minima repellendus maiores illum vero, accusamus alias vel laborum quae doloremque repudiandae autem facilis at omnis! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus qui explicabo, maiores accusamus facilis consequatur esse beatae incidunt placeat sed excepturi officia impedit quaerat aut rerum totam ratione sint sapiente. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab quaerat ipsum expedita rerum, aperiam, sint soluta laudantium recusandae facilis consequatur alias ratione illo repellat modi dolor dicta ducimus voluptatibus facere.</div>
+    </div>
+</body>
+</html>
